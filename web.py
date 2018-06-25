@@ -4,7 +4,7 @@ import re
 import pandas as pd
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'}
-response = requests.get("https://www,goddesswoman.in/",headers=headers)
+response = requests.get("https://www.zomato.com/bangalore/top-restaurants",headers=headers)
 content = response.content
 print(content)
 soup = BeautifulSoup(content,"html.parser")
